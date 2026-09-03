@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b5cab">
+  <title>Test Maestro/a Albañil</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><h1>Test Maestro/a Albañil</h1><p>Preguntas aleatorias · Corrección inmediata · Progreso guardado en este navegador</p></div></header>
+<main class="wrap">
+  <section class="controls card">
+    <div><label for="exam">Examen</label><select id="exam"></select></div>
+    <div><label for="category">Categoría</label><select id="category"></select></div>
+    <button id="restart" class="secondary">Reiniciar sesión</button>
+  </section>
+  <section class="stats card">
+    <div><strong id="done">0</strong><span>Respondidas</span></div>
+    <div><strong id="hits">0</strong><span>Aciertos</span></div>
+    <div><strong id="misses">0</strong><span>Fallos</span></div>
+    <div><strong id="rate">0%</strong><span>Porcentaje</span></div>
+    <div><strong id="remaining">0</strong><span>Pendientes</span></div>
+  </section>
+  <section class="card question-card">
+    <div class="meta"><span id="examName"></span><span id="qnum"></span></div>
+    <h2 id="question">Cargando preguntas…</h2>
+    <form id="answers" aria-label="Opciones de respuesta"></form>
+    <div id="feedback" class="feedback hidden" role="status"></div>
+    <div class="actions"><button id="validate" disabled>Validar respuesta</button><button id="next" class="secondary hidden">Siguiente pregunta</button></div>
+  </section>
+  <p class="note">La sesión evita repetir preguntas del filtro actual hasta agotar las disponibles. Al terminar, puedes reiniciar y comenzar otra ronda.</p>
+</main>
+<footer>Banco de preguntas basado en el documento de examen y respuestas proporcionado por el usuario.</footer>
+<script src="preguntas.js"></script><script src="app.js"></script>
+</body></html>
