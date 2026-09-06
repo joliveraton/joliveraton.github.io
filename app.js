@@ -10,7 +10,9 @@
   function filterBank(){return bank.filter(q=>(!state.exam||q.exam===state.exam)&&(!state.category||q.category===state.category));}
   function fillSelect(el, values, allText, selected){el.innerHTML=''; const o=document.createElement('option');o.value='';o.textContent=allText;el.appendChild(o);values.forEach(v=>{const x=document.createElement('option');x.value=v;x.textContent=v;if(v===selected)x.selected=true;el.appendChild(x)});}
   function setup(){
-    state={exam:state.exam||'',category:state.category||'',seen:state.seen||[],stats:state.stats||{done:0,hits:0,misses:0}};
+    // Cada apertura de la página inicia una nueva ronda aleatoria.
+    // Se conservan las estadísticas, pero se reinicia la lista de preguntas ya vistas.
+    state={exam:state.exam||'',category:state.category||'',seen:[],stats:state.stats||{done:0,hits:0,misses:0}};
     fillSelect($('exam'),uniq(bank.map(q=>q.exam)),'Todos los exámenes',state.exam);
     fillSelect($('category'),uniq(bank.map(q=>q.category)),'Todas las categorías',state.category);
     $('exam').onchange=e=>{state.exam=e.target.value;resetRound();render();};
