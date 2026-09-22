@@ -1,42 +1,11 @@
-(() => {
-  const LETTERS=['A','B','C','D','E','F'];
-  const $=id=>document.getElementById(id);
-  const stateKey='maestroAlbanilQuizV1';
-  let state=JSON.parse(localStorage.getItem(stateKey)||'{}');
-  let current=null, validated=false;
-  const bank=(window.QUESTION_BANK||[]).filter(q=>q&&q.question&&Array.isArray(q.options)&&q.options.length>=2&&Number.isInteger(q.correct)&&q.correct>=0&&q.correct<q.options.length);
-  const uniq=a=>[...new Set(a.filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
-  function save(){localStorage.setItem(stateKey,JSON.stringify(state));}
-  function filterBank(){return bank.filter(q=>(!state.exam||q.exam===state.exam)&&(!state.category||q.category===state.category));}
-  function fillSelect(el, values, allText, selected){el.innerHTML=''; const o=document.createElement('option');o.value='';o.textContent=allText;el.appendChild(o);values.forEach(v=>{const x=document.createElement('option');x.value=v;x.textContent=v;if(v===selected)x.selected=true;el.appendChild(x)});}
-  function setup(){
-    // Cada apertura de la página inicia una nueva ronda aleatoria.
-    // Se conservan las estadísticas, pero se reinicia la lista de preguntas ya vistas.
-    state={exam:state.exam||'',category:state.category||'',seen:[],stats:state.stats||{done:0,hits:0,misses:0}};
-    fillSelect($('exam'),uniq(bank.map(q=>q.exam)),'Todos los exámenes',state.exam);
-    fillSelect($('category'),uniq(bank.map(q=>q.category)),'Todas las categorías',state.category);
-    $('exam').onchange=e=>{state.exam=e.target.value;resetRound();render();};
-    $('category').onchange=e=>{state.category=e.target.value;resetRound();render();};
-    $('restart').onclick=()=>{if(confirm('¿Reiniciar la ronda y las estadísticas?')){state.seen=[];state.stats={done:0,hits:0,misses:0};save();render();}};
-    $('validate').onclick=validate;$('next').onclick=next;renderStats();next();
-  }
-  function resetRound(){state.seen=[];save();}
-  function renderStats(){const s=state.stats,total=s.done||0;$('done').textContent=total;$('hits').textContent=s.hits||0;$('misses').textContent=s.misses||0;$('rate').textContent=total?Math.round((s.hits/total)*100)+'%':'0%';$('remaining').textContent=Math.max(0,filterBank().filter(q=>!state.seen.includes(q.id)).length);}
-  function next(){
-    const pool=filterBank(); if(!pool.length){$('question').textContent='No hay preguntas disponibles para este filtro.';return;}
-    let available=pool.filter(q=>!state.seen.includes(q.id));
-    if(!available.length){state.seen=[];save();available=[...pool];}
-    current=available[Math.floor(Math.random()*available.length)];state.seen.push(current.id);save();validated=false;
-    $('examName').textContent=current.exam||'';$('qnum').textContent='Pregunta '+(current.number??'');$('question').textContent=current.question;
-    $('answers').innerHTML='';current.options.forEach((opt,i)=>{const label=document.createElement('label');label.className='option';label.innerHTML=`<input type="radio" name="answer" value="${i}"><span><strong>${LETTERS[i]||i+1}.</strong> ${escapeHtml(opt)}</span>`;$('answers').appendChild(label);});
-    $('feedback').className='feedback hidden';$('feedback').textContent='';$('validate').disabled=false;$('validate').classList.remove('hidden');$('next').classList.add('hidden');renderStats();
-  }
-  function validate(e){e.preventDefault();if(validated)return;const checked=document.querySelector('input[name=answer]:checked');if(!checked){$('feedback').textContent='Selecciona una respuesta antes de validar.';$('feedback').className='feedback bad';return;}validated=true;const choice=Number(checked.value),ok=choice===current.correct;state.stats.done++;if(ok)state.stats.hits++;else state.stats.misses++;save();
-    document.querySelectorAll('.option').forEach((el,i)=>{const input=el.querySelector('input');input.disabled=true;if(i===current.correct)el.classList.add('correct');if(i===choice&&!ok)el.classList.add('wrong');});
-    const correct=`${LETTERS[current.correct]||current.correct+1}. ${current.options[current.correct]}`;
-    $('feedback').textContent=ok?'✅ Correcta. ¡Bien hecho!':'❌ Incorrecta. La respuesta correcta es: '+correct;$('feedback').className='feedback '+(ok?'ok':'bad');$('validate').classList.add('hidden');$('next').classList.remove('hidden');renderStats();
-  }
-  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
-  if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-  setup();
-})();
+(()=>{const Q=window.QUESTIONS||[],sel=document.getElementById("sourceSelect"),nr=document.getElementById("noRepeat"),newBtn=document.getElementById("newQuestionBtn"),reset=document.getElementById("resetStatsBtn"),form=document.getElementById("answerForm"),opts=document.getElementById("options"),qt=document.getElementById("questionText"),qs=document.getElementById("questionSource"),qn=document.getElementById("questionNumber"),submit=document.getElementById("submitBtn"),next=document.getElementById("nextBtn"),fb=document.getElementById("feedback"),bar=document.getElementById("progressBar"),pc=document.getElementById("poolCount"),cc=document.getElementById("correctCount"),wc=document.getElementById("wrongCount"),ac=document.getElementById("accuracy");let current=null,answered=false,used=new Set(),stats={correct:0,wrong:0};const KEY="maestro-albanil-test-v2";
+function save(){localStorage.setItem(KEY,JSON.stringify({stats,used:[...used],noRepeat:nr.checked,source:sel.value}))}
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(!s)return;stats=s.stats||stats;used=new Set(s.used||[]);nr.checked=s.noRepeat!==false;sel.value=s.source||"all"}catch(e){}}
+function sources(){const m=new Map();Q.forEach(q=>m.set(q.source.id,q.source));return [...m.values()]}
+function fillSources(){const ss=sources();const maestros=ss.filter(s=>(s.category||"Maestro Albañil")==="Maestro Albañil");const oficiales=ss.filter(s=>s.category==="Oficial Albañil");sel.innerHTML='<option value="all">Todos los exámenes ('+Q.length+' preguntas)</option><option value="__category__maestro">Solo Maestro Albañil ('+Q.filter(q=>(q.source.category||"Maestro Albañil")==="Maestro Albañil").length+')</option><option value="__category__oficial">Solo Oficial Albañil ('+Q.filter(q=>q.source.category==="Oficial Albañil").length+')</option>';for(const [label,list] of [["Maestro Albañil",maestros],["Oficial Albañil",oficiales]]){const og=document.createElement("optgroup");og.label=label;list.forEach(s=>{const n=Q.filter(q=>q.source.id===s.id).length;const o=document.createElement("option");o.value=s.id;o.textContent=`${s.label} (${n})`;og.appendChild(o)});sel.appendChild(og)}}
+function pool(){if(sel.value==="__category__maestro")return Q.filter(q=>(q.source.category||"Maestro Albañil")==="Maestro Albañil");if(sel.value==="__category__oficial")return Q.filter(q=>q.source.category==="Oficial Albañil");return sel.value==="all"?Q:Q.filter(q=>q.source.id===sel.value)}
+function statsUI(){const t=stats.correct+stats.wrong;cc.textContent=stats.correct;wc.textContent=stats.wrong;ac.textContent=t?Math.round(stats.correct/t*100)+"%":"0%";pc.textContent=pool().length}
+function choose(){const p=pool();if(!p.length)return;let c=nr.checked?p.filter(q=>!used.has(q.id)):p;if(!c.length){used=new Set();c=p}current=c[Math.floor(Math.random()*c.length)];used.add(current.id);answered=false;qs.textContent=current.source.label;qn.textContent="Pregunta "+current.number;qt.textContent=current.question;opts.innerHTML="";Object.entries(current.options).map(([key,text])=>({key,text})).sort(()=>Math.random()-.5).forEach((o,i)=>{const id="o"+i,w=document.createElement("div");w.className="option";w.dataset.key=o.key;w.innerHTML=`<input type="radio" name="answer" id="${id}" value="${o.key}"><label for="${id}"><span class="letter">${o.key}</span><span class="option-text"></span></label>`;w.querySelector(".option-text").textContent=o.text;opts.appendChild(w)});fb.hidden=true;submit.disabled=false;next.disabled=true;bar.style.width=Math.min(100,used.size/Math.max(1,p.length)*100)+"%";statsUI();save()}
+function escape(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML}
+form.addEventListener("submit",e=>{e.preventDefault();if(!current||answered)return;const r=form.querySelector('input[name="answer"]:checked');if(!r){fb.hidden=false;fb.className="feedback incorrect";fb.innerHTML="<strong>Selecciona una respuesta.</strong> Marca una opción antes de enviar.";return}answered=true;const ok=r.value===current.correct;opts.querySelectorAll(".option").forEach(x=>{if(x.dataset.key===current.correct)x.classList.add("correct-answer");if(x.dataset.key===r.value&&!ok)x.classList.add("wrong-answer");x.querySelector("input").disabled=true});if(ok){stats.correct++;fb.hidden=false;fb.className="feedback correct";fb.innerHTML="<strong>¡Correcta!</strong> Tu respuesta coincide con la plantilla."}else{stats.wrong++;fb.hidden=false;fb.className="feedback incorrect";fb.innerHTML=`<strong>Incorrecta.</strong> La respuesta correcta es <strong>${current.correct.toUpperCase()}) ${escape(current.options[current.correct])}</strong>`}submit.disabled=true;next.disabled=false;statsUI();save()});
+next.addEventListener("click",choose);newBtn.addEventListener("click",choose);sel.addEventListener("change",()=>{used=new Set();save();choose()});nr.addEventListener("change",save);reset.addEventListener("click",()=>{if(!confirm("¿Reiniciar estadísticas e historial?"))return;stats={correct:0,wrong:0};used=new Set();save();choose()});fillSources();load();if(![...sel.options].some(o=>o.value===sel.value))sel.value="all";statsUI();choose()})();

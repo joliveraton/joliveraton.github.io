@@ -1,37 +1,7 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b5cab">
-  <title>Test Maestro/a Albañil</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><div class="wrap"><h1>Test Maestro/a Albañil</h1><p>Preguntas aleatorias · Corrección inmediata · Progreso guardado en este navegador</p></div></header>
-<main class="wrap">
-  <section class="controls card">
-    <div><label for="exam">Examen</label><select id="exam"></select></div>
-    <div><label for="category">Categoría</label><select id="category"></select></div>
-    <button id="restart" class="secondary">Reiniciar sesión</button>
-  </section>
-  <section class="stats card">
-    <div><strong id="done">0</strong><span>Respondidas</span></div>
-    <div><strong id="hits">0</strong><span>Aciertos</span></div>
-    <div><strong id="misses">0</strong><span>Fallos</span></div>
-    <div><strong id="rate">0%</strong><span>Porcentaje</span></div>
-    <div><strong id="remaining">0</strong><span>Pendientes</span></div>
-  </section>
-  <section class="card question-card">
-    <div class="meta"><span id="examName"></span><span id="qnum"></span></div>
-    <h2 id="question">Cargando preguntas…</h2>
-    <form id="answers" aria-label="Opciones de respuesta"></form>
-    <div id="feedback" class="feedback hidden" role="status"></div>
-    <div class="actions"><button id="validate" disabled>Validar respuesta</button><button id="next" class="secondary hidden">Siguiente pregunta</button></div>
-  </section>
-  <p class="note">La sesión evita repetir preguntas del filtro actual hasta agotar las disponibles. Al terminar, puedes reiniciar y comenzar otra ronda.</p>
-</main>
-<footer>Banco de preguntas basado en el documento de examen y respuestas proporcionado por el usuario.</footer>
-<script src="preguntas.js"></script><script src="app.js"></script>
-</body></html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Test aleatorio de Maestro y Oficial Albañil"><title>Test Maestro y Oficial Albañil</title><link rel="stylesheet" href="styles.css"></head><body><main class="app-shell">
+<header class="hero"><div><p class="eyebrow">Preparación de examen</p><h1>Test Maestro y Oficial Albañil</h1><p class="subtitle">Preguntas aleatorias extraídas del documento de exámenes.</p></div><button id="resetStatsBtn" class="button button-ghost" type="button">Reiniciar estadísticas</button></header>
+<section class="controls card"><div class="control"><label for="sourceSelect">Temario / examen</label><select id="sourceSelect"></select></div><label class="checkbox-control"><input id="noRepeat" type="checkbox" checked><span>No repetir preguntas hasta agotar el bloque</span></label><button id="newQuestionBtn" class="button button-secondary" type="button">Nueva pregunta</button></section>
+<section class="stats-grid"><div class="stat card"><span>Preguntas</span><strong id="poolCount">0</strong></div><div class="stat card"><span>Correctas</span><strong id="correctCount">0</strong></div><div class="stat card"><span>Incorrectas</span><strong id="wrongCount">0</strong></div><div class="stat card"><span>Acierto</span><strong id="accuracy">0%</strong></div></section>
+<section class="quiz card"><div class="quiz-topline"><span id="questionSource" class="tag">—</span><span id="questionNumber">Pregunta —</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div><h2 id="questionText">Cargando pregunta…</h2>
+<form id="answerForm"><fieldset id="options" class="options"><legend class="sr-only">Selecciona una respuesta</legend></fieldset><div class="actions"><button id="submitBtn" class="button button-primary" type="submit">Enviar respuesta</button><button id="nextBtn" class="button button-secondary" type="button" disabled>Siguiente pregunta</button></div></form><div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div></section>
+<footer><p>Funciona completamente en el navegador: no necesita servidor ni base de datos.</p><p>Las respuestas correctas se han tomado de las plantillas de respuestas incluidas en los PDF aportados.</p></footer></main><script src="questions.js"></script><script src="app.js"></script></body></html>
