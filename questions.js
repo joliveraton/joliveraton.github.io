@@ -10676,5 +10676,670 @@ window.QUESTIONS = [
       "c": "Tomar otra decisión que la primera elegida."
     },
     "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-1",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 1,
+    "question": "LA CONSTITUCIÓN SE FUNDAMENTA:",
+    "options": {
+      "a": "En la unidad de la Nación Española.",
+      "b": "En el compromiso de unidad de todos los pueblos y nacionalidades integrantes de la Nación Española.",
+      "c": "En la indisoluble unidad de la Nación Española.",
+      "d": "En la pluralidad de pueblos integrantes de la Nación Española."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-2",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 2,
+    "question": "LOS VALORES SUPERIORES DEL ORDENAMIENTO JURÍDICO PROPUGNADOS DESDE NUESTRA CONSTITUCIÓN SON:",
+    "options": {
+      "a": "La libertad, la justicia, la igualdad y el pluralismo político.",
+      "b": "La libertad, la justicia y la libre competencia.",
+      "c": "La libertad, la igualdad y el pluralismo político y sindical.",
+      "d": "La libertad, la igualdad y la fraternidad."
+    },
+    "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-3",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 3,
+    "question": "LA FORMA POLÍTICA DEL ESTADO ESPAÑOL ES:",
+    "options": {
+      "a": "El Parlamentarismo Bicameral.",
+      "b": "La Monarquía Parlamentaria.",
+      "c": "El Parlamentarismo Democrático.",
+      "d": "La Monarquía Institucional."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-4",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 4,
+    "question": "LA SOBERANÍA NACIONAL:",
+    "options": {
+      "a": "Reside en los ciudadanos mayores de edad.",
+      "b": "Reside en el Congreso y en el Senado.",
+      "c": "Reside en el pueblo.",
+      "d": "Reside en el Rey."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-5",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 5,
+    "question": "¿DE DÓNDE EMANAN LOS PODERES DEL ESTADO SEGÚN LO SEÑALADO EN NUESTRA CONSTITUCIÓN ESPAÑOLA DE 1978?",
+    "options": {
+      "a": "Del Rey.",
+      "b": "Del Gobierno de la Nación elegido mediante sufragio universal.",
+      "c": "De las Cortes Generales.",
+      "d": "Del pueblo español"
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-6",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 6,
+    "question": "RESPECTO A LAS NACIONALIDADES Y REGIONES QUE INTEGRAN A LA NACIÓN ESPAÑOLA, LA CONSTITUCIÓN LES RECONOCE Y GARANTIZA:",
+    "options": {
+      "a": "El derecho a la autonomía.",
+      "b": "El derecho a la solidaridad entre ellas, pero no el derecho a la autonomía políticamente entendida.",
+      "c": "El Derecho a su libre federación o confederación.",
+      "d": "El Derecho a la libre autodeterminación."
+    },
+    "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-7",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 7,
+    "question": "¿QUÉ DEBERÁN PROMOVER LOS PODERES PÚBLICOS SEGÚN LO ESTABLECIDO EN LA CONSTITUCIÓN DE 1978?",
+    "options": {
+      "a": "Las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean comunes a todos los miembros de la sociedad.",
+      "b": "Las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra puedan atribuirse a los ciudadanos dentro del respeto a la Constitución y las leyes.",
+      "c": "Las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra alcancen el nivel más alto posible.",
+      "d": "Las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-8",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 8,
+    "question": "UNO DE LOS SIGUIENTES PRINCIPIOS NO ESTÁ GARANTIZADO POR LA CONSTITUCIÓN:",
+    "options": {
+      "a": "El de irretroactividad.",
+      "b": "El de publicidad de las normas.",
+      "c": "El de jerarquía reglamentaria.",
+      "d": "El de legalidad."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-9",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 9,
+    "question": "SEGÚN LA CONSTITUCIÓN ESPAÑOLA, NUESTRO PAÍS SE HA CONSTITUIDO:",
+    "options": {
+      "a": "En una Nación social democrática de Derecho.",
+      "b": "En una Monarquía democrática de Derecho.",
+      "c": "En un Estado social y democrático de Derecho.",
+      "d": "En un Estado respetuoso del Derecho y de la Democracia."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-10",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 10,
+    "question": "LOS PARTIDOS POLÍTICOS:",
+    "options": {
+      "a": "Son instrumento fundamental para la participación política.",
+      "b": "Concurren a la formación de la voluntad institucional.",
+      "c": "Participan en la manifestación de la voluntad de las agrupaciones políticas.",
+      "d": "Expresan el pluralismo ideológico en todos los campos."
+    },
+    "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-11",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 11,
+    "question": "¿CUÁNDO SON MAYORES DE EDAD LOS ESPAÑOLES SEGÚN LO PREVISTO EN LA CONSTITUCIÓN ESPAÑOLA?",
+    "options": {
+      "a": "A los dieciséis años.",
+      "b": "A los veintiún años.",
+      "c": "A la edad que se establezca en una Ley orgánica.",
+      "d": "A los dieciocho años."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-12",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 12,
+    "question": "¿CÓMO SE DENOMINA EL PROCEDIMIENTO SEÑALADO EN LA CONSTITUCIÓN ESPAÑOLA POR EL QUE SE PRETENDE LA INMEDIATA PUESTA A DISPOSICIÓN JUDICIAL DE TODA PERSONA DETENIDA ILEGALMENTE?",
+    "options": {
+      "a": "Iustitia humanum est.",
+      "b": "Detención preventiva.",
+      "c": "Extra corpus carceris.",
+      "d": "Habeas Corpus."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-13",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 13,
+    "question": "¿CUÁL ES EL TIEMPO MÁXIMO DE DURACIÓN DE LA DETENCIÓN PREVENTIVA?",
+    "options": {
+      "a": "48 horas.",
+      "b": "24 horas.",
+      "c": "72 horas.",
+      "d": "36 horas."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-14",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 14,
+    "question": "UNA DE LAS SIGUIENTES AFIRMACIONES ES FALSA:",
+    "options": {
+      "a": "La Constitución admite que el matrimonio podrá ser disuelto.",
+      "b": "La Constitución establece que el hombre y la mujer tienen derecho a contraer matrimonio con plena igualdad jurídica.",
+      "c": "La Constitución delega en la Ley la concreción de los derechos y deberes de los cónyuges.",
+      "d": "La Constitución dispone que la edad y la capacidad del hombre y la mujer para contraer matrimonio se alcanza con la mayoría de edad."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-15",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 15,
+    "question": "EL PRINCIPIO DE LEGALIDAD REGULADO EN EL ARTÍCULO 25.1 DE NUESTRA CONSTITUCIÓN IMPLICA QUE:",
+    "options": {
+      "a": "Nadie podrá ser condenado o sancionado por acciones u omisiones que en el momento de producirse no constituyan delito según la legislación vigente en aquel momento.",
+      "b": "Todos los ciudadanos y los poderes públicos están sometidos al imperio de la Ley.",
+      "c": "Podrá ser sancionada una persona por la comisión de una falta, aun cuando no constituya infracción penal en el momento de producirse, siempre que si lo sea al dictarse sentencia.",
+      "d": "Podrá ser sancionada una persona por la comisión de una infracción administrativa, aun cuando no constituya conducta sancionable en el momento de producirse."
+    },
+    "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-16",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 16,
+    "question": "UNA DE LAS SIGUIENTES AFIRMACIONES NO ES VERDADERA. LOS PODERES PÚBLICOS, SEGÚN DISPONE LA CONSTITUCIÓN:",
+    "options": {
+      "a": "Garantizan la protección económica de la familia.",
+      "b": "Garantizan la protección fiscal de la familia.",
+      "c": "Garantizan la protección jurídica de la familia.",
+      "d": "Garantizan la protección social de la familia."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-17",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 17,
+    "question": "EL DERECHO DE REUNIÓN RECONOCIDO CONSTITUCIONALMENTE, EN LUGARES DE TRÁNSITO PÚBLICO Y MANIFESTACIONES:",
+    "options": {
+      "a": "No podrá ser prohibido ni aun cuando haya peligro, debiendo, eso sí, ser dotado el acto de un intenso servicio de seguridad.",
+      "b": "No precisará tampoco ni autorización previa ni comunicación de la misma índole a la autoridad.",
+      "c": "Sólo podrá ser prohibido si su celebración implica un peligro para las personas.",
+      "d": "Podrá ser prohibido cuando existan razones fundadas de alteración del orden público."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-18",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 18,
+    "question": "¿ANTE QUIÉN SE PRESENTA EL RECURSO DE AMPARO?",
+    "options": {
+      "a": "Ante cualquier juzgado o tribunal.",
+      "b": "Ante el Consejo General del Poder Judicial.",
+      "c": "Ante el Tribunal Constitucional.",
+      "d": "Ante el Tribunal Supremo."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-19",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 19,
+    "question": "EN TORNO AL SOSTENIMIENTO DE LOS GASTOS PÚBLICOS:",
+    "options": {
+      "a": "Todos contribuirán de acuerdo con el volumen de sus ingresos.",
+      "b": "Se realizarán mediante un sistema tributario justo.",
+      "c": "El sistema tributario estará inspirado en el principio de recaudación intensiva.",
+      "d": "El sistema recaudatorio tendrá en determinados casos alcance confiscatorio."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-20",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 20,
+    "question": "CONSTITUYE EL FUNDAMENTO DEL ORDEN PÚBLICO Y DE LA PAZ SOCIAL, SEGÚN LA CONSTITUCIÓN, EL/LA/LOS:",
+    "options": {
+      "a": "Seguridad Jurídica.",
+      "b": "Estado social y democrático de Derecho.",
+      "c": "Derechos inviolables inherentes a la persona.",
+      "d": "Justicia."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-21",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 21,
+    "question": "LA EDUCACIÓN TENDRÁ POR OBJETO:",
+    "options": {
+      "a": "El pleno desarrollo de la personalidad humana conforme a los planes educativos aprobados por el Consejo Escolar Nacional a instancia de las Asociaciones Nacionales de Padres de Alumnos.",
+      "b": "El pleno desarrollo de la personalidad humana en el respeto de los principios democráticos de convivencia, y a los derechos y libertades culturales.",
+      "c": "El desarrollo de la personalidad humana conforme a las líneas educativas marcadas por el Consejo Escolar Nacional.",
+      "d": "El pleno desarrollo de la personalidad humana en el respeto de los principios democráticos de convivencia, y a los derechos y libertades fundamentales."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-22",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 22,
+    "question": "LOS PODERES PÚBLICOS GARANTIZAN EL DERECHO QUE ASISTE A LOS PADRES PARA QUE SUS HIJOS:",
+    "options": {
+      "a": "Reciban formación religiosa y moral.",
+      "b": "Reciban la formación religiosa y moral que esté de acuerdo con sus propias convicciones.",
+      "c": "Reciban la formación religiosa y moral determinada por dichos poderes públicos.",
+      "d": "No reciban formación moral o religiosa alguna."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-23",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 23,
+    "question": "LA ENSEÑANZA:",
+    "options": {
+      "a": "Básica es obligatoria y gratuita.",
+      "b": "Primaria es potestativa.",
+      "c": "Media es gratuita.",
+      "d": "Universitaria es gratuita."
+    },
+    "correct": "a"
+  },
+  {
+    "id": "constitucion-bilbao-2025-24",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 24,
+    "question": "ADEMÁS DE EN LA VIDA ECONÓMICA Y POLÍTICA, LOS PODERES PÚBLICOS DEBEN FOMENTAR LA PARTICIPACIÓN DE LOS CIUDADANOS EN LA VIDA:",
+    "options": {
+      "a": "Cultural.",
+      "b": "Social.",
+      "c": "Corporativa.",
+      "d": "Las respuestas a) y b) son correctas."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-25",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 25,
+    "question": "EL DERECHO DE PETICIÓN:",
+    "options": {
+      "a": "Está reconocido en beneficio de los españoles en el artículo 30 de la Constitución.",
+      "b": "Podrá ser ejercido de forma individual.",
+      "c": "Siempre deberá ser ejercido por escrito en papel timbrado.",
+      "d": "No podrá ser ejercido colectivamente."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-26",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 26,
+    "question": "EL DERECHO DE REUNIÓN RECONOCIDO CONSTITUCIONALMENTE:",
+    "options": {
+      "a": "Sólo precisará autorización previa cuando se prevea que la reunión no va a discurrir por cauces pacíficos.",
+      "b": "Sólo precisará autorización previa cuando en la reunión a celebrar se vayan a utilizar armas.",
+      "c": "No precisará autorización previa cuando la reunión sea pacífica y sin armas.",
+      "d": "Precisará para su ejercicio autorización previa."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-27",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 27,
+    "question": "¿QUÉ ASOCIACIONES SON CONSIDERADAS ILEGALES O PROHIBIDAS?",
+    "options": {
+      "a": "Las que tengan por fin el cambio de la forma de estado.",
+      "b": "Las que tengan por fin la modificación del contenido de los derechos fundamentales.",
+      "c": "Las secretas.",
+      "d": "Las respuestas a) y c) son correctas."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-28",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 28,
+    "question": "¿EN QUÉ CASOS SE PUEDE PROCEDER A LA ENTRADA EN UN DOMICILIO PARTICULAR?",
+    "options": {
+      "a": "En caso de autorización del titular o resolución judicial exclusivamente.",
+      "b": "En caso de autorización del titular, resolución judicial o flagrante delito.",
+      "c": "En caso de delito flagrante o resolución judicial exclusivamente.",
+      "d": "En caso de resolución judicial exclusivamente."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-29",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 29,
+    "question": "EN TORNO AL MEDIO AMBIENTE:",
+    "options": {
+      "a": "Se encuentra reconocido como Derecho en el artículo 44 de la Constitución.",
+      "b": "La Constitución no impone el deber de conservarlo.",
+      "c": "El derecho a disfrutarlo es fundamental para las personas.",
+      "d": "Todos tienen derecho a disfrutar de un medio ambiente adecuado para el desarrollo de la persona."
+    },
+    "correct": "d"
+  },
+  {
+    "id": "constitucion-bilbao-2025-30",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 30,
+    "question": "LAS ORGANIZACIONES PROFESIONALES PARA LA DEFENSA DE SUS PROPIOS INTERESES ECONÓMICOS:",
+    "options": {
+      "a": "Son, realmente, los Colegios Profesionales.",
+      "b": "Son, realmente, asociaciones de consumidores y usuarios.",
+      "c": "Su estructura interna y su funcionamiento deberán ser democráticos.",
+      "d": "No están previstas constitucionalmente."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-31",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 31,
+    "question": "EN TODO CASO, EL DETENIDO DEBERÁ SER PUESTO EN LIBERTAD O A DISPOSICIÓN JUDICIAL EN EL PLAZO:",
+    "options": {
+      "a": "Mínimo de setenta y dos horas.",
+      "b": "Máximo de setenta y dos horas.",
+      "c": "Mínimo de veinticuatro horas.",
+      "d": "Máximo de cuarenta y ocho horas."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-32",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 32,
+    "question": "LA IGUALDAD DE LOS ESPAÑOLES ANTE LA LEY:",
+    "options": {
+      "a": "Puede prevalecer discriminación en base a ciertas circunstancias sociales.",
+      "b": "Es absoluta.",
+      "c": "Puede prevalecer discriminación en base a determinadas circunstancias personales.",
+      "d": "Se recoge en el Título Preliminar de nuestra Constitución."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-33",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 33,
+    "question": "LA PROPIEDAD PRIVADA:",
+    "options": {
+      "a": "Es un derecho fundamental de la persona reconocido en nuestra Constitución.",
+      "b": "Tiene una función social que delimitará su contenido.",
+      "c": "Al igual que la herencia está protegida por el Recurso de Amparo.",
+      "d": "Tal función social no existe respecto del derecho a la herencia."
+    },
+    "correct": "b"
+  },
+  {
+    "id": "constitucion-bilbao-2025-34",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 34,
+    "question": "EN RELACIÓN CON EL DERECHO DE LOS ESPAÑOLES A UNA VIVIENDA DIGNA Y ADECUADA:",
+    "options": {
+      "a": "La comunidad no está obligada a participar en la plusvalía que genere la acción urbanística de los entes públicos.",
+      "b": "Los poderes públicos no están obligados a realizar gestión o promoción alguna para hacerlo efectivo.",
+      "c": "Los poderes públicos están obligados a regular la utilización del suelo de acuerdo con el interés general para impedir la especulación.",
+      "d": "La efectividad de tal derecho está en manos de los propios ciudadanos y de las empresas constructoras."
+    },
+    "correct": "c"
+  },
+  {
+    "id": "constitucion-bilbao-2025-35",
+    "source": {
+      "id": "constitucion-bilbao-2025-tema1",
+      "label": "Constitución — Ayuntamiento de Bilbao — Tema 1",
+      "date": "5 de febrero de 2025",
+      "exercise": "Tema 1",
+      "category": "Constitución"
+    },
+    "number": 35,
+    "question": "EN EL MARCO DE LO DISPUESTO CONSTITUCIONALMENTE EN TORNO A LA PROTECCIÓN DE LOS DERECHOS DE CONSUMIDORES Y USUARIOS, SERÁ LA LEY LA QUE REGULE:",
+    "options": {
+      "a": "El comercio interior.",
+      "b": "El comercio exterior.",
+      "c": "El régimen de formulación de servicios públicos.",
+      "d": "El régimen de formulación de quejas y reclamaciones."
+    },
+    "correct": "a"
   }
 ];
